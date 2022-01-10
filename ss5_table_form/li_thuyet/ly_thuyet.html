@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-$END$
+<form action="https://www.google.com" name="formDangKy" method="get">
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td><input type="text" name="id" placeholder="Name" value="10" disabled></td>
+        </tr>
+        <tr>
+            <td><label for="username">Username</label></td>
+            <td><input type="text" name="username" placeholder="Name" id="username" required></td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td><input type="tel" name="phoneNumber" placeholder="Phone Number"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" placeholder="Password" id="password"><button onclick="showPass()">Show password</button></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label> <br>
+                <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label> <br>
+                <input type="radio" name="gender" id="other" value="other"> <label for="other">Other</label> <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" name="checkbox" value="yes"> I agree to the ...</td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>
+                <select name="subject">
+                    <option value="js">Javascript</option>
+                    <option value="java">Java core</option>
+                    <option value="java2">Java web</option>
+                    <option value="java3">Java spring</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="reset" value="Reset"><br>
+    <input type="submit" value="Create Account"><br>
+    <input type="button" value="Click me" onclick="alert('Hello world')">
+</form>
+
+<h2>Thong tin user</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Trần Đức Linh</td>
+        <td rowspan="2">Đà Nẵng</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Nguyễn Việt Thắng</td>
+        <!--<td>Đà Nẵng</td>-->
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Lê Hoàng Công Việt</td>
+        <td>Quảng Nam</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td colspan="2">Nguyễn Hữu Minh Thành</td>
+        <!--<td>Quảng Ngãi</td>-->
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Hùng</td>
+        <td>Huế</td>
+    </tr>
+</table>
+
+<hr>
+<form>
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        Họ tên: <input type="text"> <br>
+        Email: <input type="email"> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Thông tin lớp học</legend>
+        Lớp: <input type="text"> <br>
+        Thời gian học: <input type="text"> <br>
+    </fieldset>
+</form>
+<script>
+    function showPass() {
+        var password = document.getElementById('password');
+        if (password.type === 'password') {
+            password.type = 'text';
+        } else {
+            password.type = 'password';
+        }
+    }
+
+        function keyPress() {
+            var password = document.getElementById('password');
+            password.type = 'text';
+        }
+
+        function keyUp() {
+            var password = document.getElementById('password');
+            password.type = 'password';
+        }
+</script>
 </body>
 </html>
