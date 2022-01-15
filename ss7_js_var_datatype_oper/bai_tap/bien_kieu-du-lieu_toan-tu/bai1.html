@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputPhy = prompt('Nhập vào điểm môn Vật Lý');
+    var inputChe = prompt('Nhập vào điểm môn Hóa học');
+    var inputBio = prompt('Nhập vào điểm môn Sinh học');
+    var phy = parseFloat(inputPhy);
+    var che = parseFloat(inputChe);
+    var bio = parseFloat(inputBio);
+    var sum = phy + che + bio;
+    var average = sum / 3;
+    document.write('Tổng điểm của 3 môn là: ' + sum + '<br>');
+    document.write('Điểm trung bình là: ' + average);
+</script>
+</body>
+</html>
