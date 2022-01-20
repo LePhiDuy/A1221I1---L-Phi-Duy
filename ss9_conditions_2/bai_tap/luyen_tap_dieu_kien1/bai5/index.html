@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemBaiTap = parseFloat(prompt('Nhập vào điểm bài tập: '));
+    let diemGiuaKy = parseFloat(prompt('Nhập vào điểm giữa kỳ: '));
+    let diemCuoiKy = parseFloat(prompt('Nhập vào điểm cuối kỳ: '));
+    let average = (diemBaiTap * 2 + diemGiuaKy * 2 + diemCuoiKy * 6) / 10;
+    if (average >= 9.5) {
+        alert('Xuất sắc');
+    } else if (average >= 8) {
+        alert('Giỏi');
+    } else if (average >= 6.5) {
+        alert('Khá');
+    } else if (average >= 5.0) {
+        alert('Trung bình');
+    } else {
+        alert('Yếu');
+    }
+</script>
+</body>
+</html>

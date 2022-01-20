@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseFloat(prompt('Nhập vào doanh số của công ty'));
+    let hoaHong;
+    let max1 = 100, max2 = 300;
+    let r1 = 0.05, r2 = 0.1, r3 = 0.2;
+    if (doanhSo <= max1) {
+        hoaHong = doanhSo * r1;
+    } else if (doanhSo <= 300) {
+        hoaHong = doanhSo * r2;
+    } else {
+        hoaHong = doanhSo * r3;
+    }
+    alert('Hoa hồng nhận được là: ' + hoaHong);
+</script>
+</body>
+</html>

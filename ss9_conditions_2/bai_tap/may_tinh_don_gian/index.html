@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<table border="1" width="500px">
+        <tr>
+            <td id="result" colspan="4" style="height: 20px"></td>
+        </tr>
+        <tr>
+            <td>
+                <button class='button' onclick="inputButton('1')">1</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('2')">2</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('3')">3</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('+')">+</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class='button' onclick="inputButton('4')">4</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('5')">5</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('6')">6</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('-')">-</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class='button' onclick="inputButton('7')">7</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('8')">8</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('9')">9</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('*')">x</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class='button' onclick="inputButton('C')">C</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('0')">0</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('=')">=</button>
+            </td>
+            <td>
+                <button class='button' onclick="inputButton('/')">/</button>
+            </td>
+        </tr>
+
+</table>
+
+<script>
+    function inputButton(obj) {
+        let result = document.getElementById('result').innerHTML;
+        switch (obj) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                result += obj;
+                break;
+            case '=':
+                result = eval(result);
+                break;
+            default:
+                result = '';
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+</body>
+</html>
