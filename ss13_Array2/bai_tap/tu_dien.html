@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Transplate English to Vietnamese</h3>
+<input type="text" id="btinput" placeholder="Input English word">
+<input type="button" id="transplate" value="Transplate" onclick="Transplate()">
+<script>
+    let English = ["Dog", "Cat", "Blue", "House", "Tree"];
+    let Vietnamese = ["Con chó", "Con mèo", "Màu xanh nước biển", "Ngôi nhà", "Cây xanh"];
+    function Transplate() {
+        let word = document.getElementById("btinput").value;
+        for (let i = 0; i < English.length; i++) {
+            if (word === English[i]) {
+                alert(Vietnamese[i]);
+                return;
+            }
+        }
+        alert('Không tim thấy');
+    }
+</script>
+</body>
+</html>
