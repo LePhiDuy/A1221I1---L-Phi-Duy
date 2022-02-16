@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert(minNumber(9, 21, 9));
+    function minNumber(a, b, c) {
+        let min = a;
+        if (b < c) {
+            if (b < a) {
+                min = b;
+            }
+        } else {
+            if (c < a) {
+                min = c;
+            }
+        }
+        return min;
+    }
+</script>
+</body>
+</html>

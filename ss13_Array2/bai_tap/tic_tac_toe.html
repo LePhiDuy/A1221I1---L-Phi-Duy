@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tic tac toe</h3>
+<p id="tictactoe"></p>
+<script>
+    let b = document.getElementById("tictactoe");
+    let board = [];
+    let data = "";
+    for (let i = 0; i < 5; i++) {
+        board[i] = new Array(".", ".", ".", ".", ".");
+    }
+    show();
+    function show() {
+        for (let i = 0; i < 5; i++) {
+            data += "<br/>";
+            for (let j = 0; j < 5; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+            }
+        }
+        data += "<br/><br/><input type='button' value='Change' onclick='Change()'>";
+        b.innerHTML = data;
+        data = "";
+
+    }
+
+    function Change() {
+            let positionX = prompt("Moi nguoi X choi x: ");
+            let positionY = prompt("y: ");
+            board[positionX][positionY] = 'X';
+            show();
+
+    }
+
+    function checkRowX() {
+        let i = 0;
+        let isWin = false;
+        while (i < 5 && !isWin) {
+            for (let j = 0; j < 3; j++) {
+                if (board[i][j] === board[i][j + 1] && board[i][j + 2] === board[i][j] && board[i][j] === 'X') {
+                    isWin = true;
+                    break;
+                }
+            }
+            i++;
+        }
+        return isWin;
+    }
+
+    function checkRowO() {
+        let i = 0;
+        let isWin = false;
+        while (i < 5 && !isWin) {
+            for (let j = 0; j < 3; j++) {
+                if (board[i][j] === board[i][j + 1] && board[i][j + 2] === board[i][j] && board[i][j] === 'O') {
+                    isWin = true;
+                    break;
+                }
+            }
+            i++;
+        }
+        return isWin;
+    }
+
+</script>
+</body>
+</html>

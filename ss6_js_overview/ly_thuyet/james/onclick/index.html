@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <p onclick="clickme()">Click</p>
+    <p id="click">Click me</p>
 </body>
 </html>
+
+<script>
+    function clickme()
+    {
+        alert("Hello World");
+    }
+    var test = document.getElementById("click");
+    test.addEventListener("click",ClickFunction);
+    function ClickFunction()
+    {
+        alert("ANh yeu em");
+    }
+</script>

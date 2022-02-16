@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputNumber = Number(prompt("Input number = "));
+    if (isPosInteger(inputNumber)) {
+        alert(inputNumber + " is a Positive Integer Number");
+    } else {
+        alert(inputNumber + " is not a Positive Integer Number")
+    }
+
+    function isPosInteger(number) {
+        if (Math.ceil(number) !== Math.floor(number)) {
+            return false
+        } else {
+            if (number <= 0) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+</script>
+</body>
+</html>

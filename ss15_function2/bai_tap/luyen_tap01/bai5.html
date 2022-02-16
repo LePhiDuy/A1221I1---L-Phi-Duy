@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+  let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+  let inputStar = prompt("Input star: ");
+  alert(searchConstellation(inputStar));
+  function searchConstellation(value) {
+      for (let i = 0; i < star.length; i++) {
+          if (value === star[i]) {
+              return constellation[i];
+          }
+      }
+      return value + " khong phai la ngoi sao";
+  }
+</script>
+</body>
+</html>
