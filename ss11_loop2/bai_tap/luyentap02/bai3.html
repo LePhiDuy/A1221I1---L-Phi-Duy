@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let result = "";
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= 5; j++) {
+        //         if(i >= j) {
+        //             result += "*";
+        //         }
+        //     }
+        //     result += "<br>";
+        // }
+        // document.getElementById("result").innerHTML = result;
+        // for (let i = 5; i >= 1; i--) {
+        //     for (let j = 5; j >= 1; j--) {
+        //         if(i >= j) {
+        //             result += "*";
+        //         }
+        //     }
+        //     result += "<br>";
+        // }
+        // document.getElementById("result").innerHTML = result;
+
+        // for (let i = 5; i >= 1; i--) {
+        //     for (let j = 1; j <= 5; j++) {
+        //         if(j >= i) {
+        //             result += "*";
+        //         } else {
+        //             result += "&nbsp&nbsp";
+        //         }
+        //     }
+        //     result += "<br>";
+        // }
+        // document.getElementById("result").innerHTML = result;
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if(j >= i) {
+                    result += "*";
+                } else {
+                    result += "&nbsp&nbsp";
+                }
+            }
+            result += "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <input type="button" value="Chơi" onclick="Play()">
+    <script>
+        function Play() {
+            let a, b;
+            do {
+                a = Number(prompt("Nhap vao can duoi "));
+                b = Number(prompt("Nhap vao can tren "));
+                if (a >= b) {
+                    alert("Ban da nhap sai khoang a b");
+                }
+            } while (a >= b);
+            let pass = Math.floor(Math.random() * (b - a + 1)) + a;
+            console.log(pass);
+            let number;
+            do {
+                number = Number(prompt("Nhap vao so cua ban"));
+                if (number > pass) {
+                    alert("So ban nhap lon hon dap an. Hay nhap lai");
+                } else if (number < pass) {
+                    alert("So ban nhap nho hon dap an. Hay nhap lai");
+                } else {
+                    alert("Ban da thang. Chuc mung ban");
+                }
+            } while (number != pass);
+            
+        }
+    </script>
+</body>
+
+</html>

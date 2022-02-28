@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let number;
+        do {
+            number = parseInt(prompt("Nhap vao so can tinh giai thua"));
+            if (number < 0) {
+                alert("Hay nhap lai so lon hon 0 ");
+            }
+        } while (number < 0);
+        let gt = 1;
+        for (let i = 1; i <= number; i++) {
+            gt *= i;
+        }
+        alert(gt);
+    </script>
+</body>
+
+</html>
