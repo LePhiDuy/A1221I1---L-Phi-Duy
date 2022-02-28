@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let a = [7,2,5,3,5,3];
+        let b = [7,2,5,4,6,3,5,3];
+        let c = [];
+        for (let i = 0; i < b.length; i++) {
+            let isExist = false;
+            for (let j = 0; j < a.length; j++) {
+                if (b[i] === a[j]) {
+                    isExist = true;
+                    break;
+                }
+            }
+            if (!isExist) {
+                c.push(b[i]);
+            }
+        }
+        console.log(c);
+        
+    </script>
+</body>
+
+</html>

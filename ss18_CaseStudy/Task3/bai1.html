@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let a = [1, 2, 3];
+        let b = [0, 0, 0];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a.length; j++) {
+                if (i >= j) {
+                    b[i] += a[j];
+                }
+            }
+        }
+        document.write(b.toString());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let h = Number(prompt("Nhap vao chieu cao cua tam giac: "));
+        let result = "";
+        for (let i = 1; i <= h; i++) {
+            for (let j = 1; j <= 2 * h - 1; j++) {
+                if ((j > h - i) && (j < h + i) ) {
+                    result += "*";
+                } else {
+                    result += "&nbsp&nbsp";
+                }
+            }
+            result += "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+
+</html>

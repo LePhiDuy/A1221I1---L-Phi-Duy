@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let luong = Number(prompt("Nhap vao luong nhan vien: "));
+        let luong1 = 7000000, luong2 = 15000000, thue1 = 0.05, thue2 = 0.1, thue3 = 0.2;
+        let thueThuNhap, thueThuNhap1 = luong1 * thue1, thueThuNhap2 = thueThuNhap1 + (luong2 - luong1) * thue2;
+        let luongRong;
+        if(luong < luong1) {
+            thueThuNhap = luong * thue1;
+        } else if(luong < luong2) {
+            thueThuNhap = thueThuNhap1 + (luong - luong1) * thue2;
+        } else {
+            thueThuNhap = thueThuNhap2 + (luong - luong2) * thue3;
+        }
+        luongRong = luong - thueThuNhap;
+        alert("Thue thu nhap la: " + thueThuNhap);
+        alert("Luong ròng là: " + luongRong);
+    </script>
+</body>
+
+</html>

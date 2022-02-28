@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let length = Number(prompt("Nhap vao chieu dai: "));
+        let width = Number(prompt("Nhap vao chieu rong: "));
+        let result = "";
+        for (let i = 1; i <= width; i++) {
+            for (let j = 1; j <= length; j++) {
+                if(i === 1 || i === width || j === 1 || j === length) {
+                    result += "*";
+                } else{
+                    result += "&nbsp&nbsp";
+                }
+            }
+            result += "<br>" + "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+
+</html>
