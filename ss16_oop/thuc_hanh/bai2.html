@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My MyMyDate</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<script>
+    class Circle {
+        constructor (radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius() {
+            return radius;
+        }
+
+        getArea() {
+            return Math.PI * this.radius * this.radius;
+        }
+    }
+
+    let obj = new Circle(2.5, "yellow");
+    console.log(obj.getArea());
+</script>
+</body>
+
+</html>

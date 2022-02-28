@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai 4</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let n = parseInt(prompt("Nhap vao so phan tu cua mang"));
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhap vao arr[" + i + "] = "));
+        }
+
+        let b = [], j = 0;
+        for(let i = arr.length - 1; i >= 0, j < arr.length; i--) {
+            b[j] = arr[i];
+            j++;
+        }
+
+        for(let i = 0; i < arr.length; i++) {
+            arr[i] = b[i];
+        }
+        alert(arr.toString());
+    </script>
+</body>
+
+</html>

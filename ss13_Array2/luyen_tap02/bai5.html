@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai 3</title>
+    <meta charset="utf -8">
+</head>
+
+<body>
+    <script>
+        let a = prompt("Input first string: ");
+        let b = prompt("Input second string: ");
+        let check = true;
+        if (a.length === b.length) {
+            for (let i = 0; i < a.length; i++) {
+                if (a.charAt(i) !== b.charAt(i)) {
+                    check = false;
+                    break;
+                }
+            }
+        } else {
+            check = false;
+        }
+
+        if (check) {
+            alert("Giong nhau");
+        } else {
+            alert("Khac nhau");
+        }
+    </script>
+</body>
+
+</html>

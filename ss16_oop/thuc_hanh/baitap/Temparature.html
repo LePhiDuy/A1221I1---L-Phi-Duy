@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temparature</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        class Temperature {
+            constructor(c) {
+                this.c = c;
+            }
+            
+            convertCToF() {
+                return (this.c * 9)/5 + 32;
+            }
+
+            convertCToK() {
+                return this.c + 273;
+            }
+        }
+        let obj = new Temperature(25);
+        alert(obj.convertCToK());
+    </script>
+</body>
+
+</html>

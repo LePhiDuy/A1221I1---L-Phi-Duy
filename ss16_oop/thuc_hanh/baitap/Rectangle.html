@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My MyMyDate</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <canvas id="myCanvas" style="width: 100%; height:100%;"></canvas>
+    <script>
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+            dienTich() {
+                return this.length * this.width;
+            }
+            chuVi() {
+                return (this.length + this.width) * 2;
+            }
+            show() {
+                var c = document.getElementById("myCanvas").getContext("2d");
+                c.fillStyle = "#fa4b2a";
+                c.fillRect(0, 0, this.length, this.width);
+            }
+            setLength(length) {
+                this.length = length;
+            } 
+            setWidth(width) {
+                this.width = width;
+            }
+        }
+
+        let obj = new Rectangle(200, 100);
+        obj.show();
+        alert(obj.dienTich());
+    </script>
+</body>
+
+</html>

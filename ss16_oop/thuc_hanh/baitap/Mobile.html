@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Phone</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        class Mobile {
+            constructor(battery, check) {
+                this.battery = battery;
+                this.Text = [];
+                this.Send = [];
+                this.Receive = [];
+                this.check = check;
+            }
+
+            turnOn() {
+                this.check = true;
+                this.battery--;
+            }
+            
+            turnOff() {
+                this.check = false;
+                this.battery--;
+            }
+
+            checkTurn() {
+                return this.check;
+                this.battery--;
+            }
+
+            sacPin() {
+                this.battery++;
+            }
+
+            soanTinNhan(mess) {
+                if (this.check) {
+                    this.Text = mess;
+                } else {
+                    console.log("Chua bat dien thoai");
+                }
+            }
+
+            nhanTinNhan(mess) {
+                if(this.check)
+                {
+                    this.Receive = mess;
+                } else {
+                    console.log("Chua bat dien thoai");
+                } 
+            }
+
+            guiTinNhan(obj, mess) {
+                if (this.check) {
+                    this.Send = mess;
+                    obj.nhanTinNhan(mess);
+                } else {
+                    console.log("Chua bat dien thoai");
+                }
+            }
+
+            xemTinDaGui() { 
+                if (this.check) {
+                    alert(this.Send);
+                } else {
+                    console.log("Chua bat dien thoai");
+                }
+            }
+
+            xemTinDaNhan() {
+                if (this.check) {
+                    alert(this.Receive);
+                } else {
+                    console.log("Chua bat dien thoai");
+                }
+                
+            }
+        }
+        let nokia = new Mobile(100,false);
+        let iphone = new Mobile(100,false);
+        nokia.turnOn();
+        console.log(nokia);
+        nokia.guiTinNhan(iphone, "anh yeu em");
+        iphone.turnOn();
+        nokia.guiTinNhan(iphone, "anh yeu em");
+        console.log(iphone);
+    </script>
+</body>
+
+</html>

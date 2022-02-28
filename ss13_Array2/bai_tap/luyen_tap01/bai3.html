@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai 3</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let arr = [1, 5, 19, 26, 38, 92, 10, 11, -5, 3];
+        let max = arr[0];
+        let s = max;
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            s += arr[i];
+        }
+        let result = "The max in arr is " + max + " and the average is " + s / arr.length;
+        document.getElementById("result").innerHTML = result; 
+    </script>
+</body>
+
+</html>

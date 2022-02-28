@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 3</title>
+        <meta charset = "utf -8">
+    </head>
+
+    <body>
+        <script>
+            let char = [];
+            let count = 0;
+            let length = parseInt(prompt("Input length of array char "));
+            for (let i = 0; i < length; i++) {
+                char[i] = prompt("Nhap vao phan tu thu " + i);
+            }
+            for (let i = 0; i < length; i++) {
+                if (char[i] >= '0' && char[i] <= '9') 
+                    count++;
+            }
+            alert(count);
+        </script>
+    </body>
+</html>
