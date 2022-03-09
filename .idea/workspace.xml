@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="374a4cd7-a48c-412b-82b3-eb0d308cebdd" name="Changes" comment="" />
+    <list default="true" id="374a4cd7-a48c-412b-82b3-eb0d308cebdd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss18_CaseStudy/Task6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_oop2/luyen_tap/Adam_Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_oop2/luyen_tap/Adam_Eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss18_CaseStudy/Task3/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss18_CaseStudy/Task3/bai2.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -48,10 +54,24 @@
       <option name="presentableId" value="Default" />
       <updated>1645011218552</updated>
       <workItem from="1645011222134" duration="10147000" />
+      <workItem from="1646393195977" duration="310000" />
+      <workItem from="1646394491535" duration="12000" />
+      <workItem from="1646394883841" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

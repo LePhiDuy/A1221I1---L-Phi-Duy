@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+       let m = Number(prompt("Nhập vào số hàng: "));
+       let n = Number(prompt("Nhập vào số cột: "));
+       let arr = new Array(m);
+       for (let i = 0; i < m; i++) {
+           arr[i] = new Array(n);
+       }
+
+       for (let i = 0; i < m; i++) {
+           for (let j = 0; j < n; j++) {
+               arr[i][j] = Number(prompt("Nhập vào phần tử thứ " + i + " " + j));
+           }
+       }
+       let S = 0;
+       for (let i in arr) {
+           for (let j in arr[i]) {
+               if (arr[i][j] % 2 === 0) {
+                   S += arr[i][j];
+               }
+           }
+       }
+       alert(S);
+    </script>
+</body>
+
+</html>

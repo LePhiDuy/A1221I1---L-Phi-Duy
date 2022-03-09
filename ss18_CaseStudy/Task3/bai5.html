@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let menu = "Menu \n"
+            + "1.Cafe \n"
+            + "2.Cam vắt \n"
+            + "3.Nước ép cà rốt \n"
+            + "4.Nước ép cà chua \n"
+            + "5.Nước lọc \n"
+            + "6.Nước dừa \n"
+            + "7.Thoát \n";
+        let amount, luaChon;
+        let tienCafe = 1000, tienCamVat = 2000, tienCaRot = 3000, tienCaChua = 4000, tienNuocLoc = 5000, tienNuocDua = 6000;
+        let S = 0;
+        do {
+            luaChon = Number(prompt(menu));
+            switch (luaChon) {
+                case 1:
+                    alert("Giá cafe là: " + tienCafe);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly cafe có tổng tiền là: " + tienCafe * amount);
+                    S += tienCafe * amount;
+                    break;
+                case 2:
+                    alert("Giá cam vắt là: " + tienCamVat);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly cam vắt có tổng tiền là: " + tienCamVat * amount);
+                    S += tienCamVat * amount;
+                    break;
+                case 3:
+                    alert("Giá nước ép cà rốt là: " + tienCaRot);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly nước ép cà rốt có tổng tiền là: " + tienCaRot * amount);
+                    S += tienCaRot * amount;
+                    break;
+                case 4:
+                    alert("Gia nước ép cà chua là: " + tienCaChua);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly nước ép cà chua có tổng tiền là: " + tienCaChua * amount);
+                    S += tienCaChua * amount;
+                    break;
+                case 5:
+                    alert("Gia của nước lọc là: " + tienNuocLoc);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly nước lọc có tổng tiền là: " + tienNuocLoc * amount);
+                    S += tienNuocLoc * amount;
+                    break;
+                case 6:
+                    alert("Giá nước dừa là: " + tienNuocDua);
+                    amount = prompt("Nhập vào số lượng: ");
+                    alert(amount + " ly nước dừa có tổng tiền là: " + tienNuocDua * amount);
+                    S += tienNuocDua * amount;
+                    break;
+                case 7:
+                    document.write("Cám ơn bạn đã gọi món" + "<br>");
+                    document.write("Tổng tiền của bạn là: " + S);
+                    break;
+                default:
+                    document.write("Bạn gọi món không hợp lệ");
+            }
+        } while (luaChon != 7);
+
+
+    </script>
+</body>
+
+</html>

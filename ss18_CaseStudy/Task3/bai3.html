@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let numerators = [5, 2, 5];
+        let denominators = [6, 3, 4];
+        function maxFraction(numerators, denominators) {
+            let c = [];
+            for (let i = 0; i < numerators.length; i++) {
+                c[i] = numerators[i] / denominators[i];
+            }
+            let max = c[0];
+            let index = 0;
+            for (let i = 0; i < c.length; i++) {
+                if (c[i] > max) {
+                    max = c[i];
+                    index = i;
+                }
+            }
+            return index;
+        }
+        
+        alert("Chỉ số của phân số lớn nhất là: " + maxFraction(numerators, denominators) );
+        
+    </script>
+</body>
+
+</html>

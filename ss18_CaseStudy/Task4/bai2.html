@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        function differentSymbolsNaive(s) {
+            let arr = [];
+            for (let i = 0; i < s.length; i++) {
+                if (arr.indexOf(s.charAt(i)) === -1) {
+                    arr.push(s.charAt(i));
+                }
+            }
+            return arr.length;
+        }
+
+        alert(differentSymbolsNaive("cabcadaf"));
+
+    </script>
+</body>
+
+</html>

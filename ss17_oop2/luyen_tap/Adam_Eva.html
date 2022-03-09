@@ -7,79 +7,82 @@
 </head>
 
 <body>
-    <script>
-        class Apple {
-            constructor() {
-                this.weight = 10;
-            }
-            decrease() {
-                this.weight--;
-            }
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
 
-            isEmpty() {
-                if (this.weight > 0) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+        decrease() {
+            this.weight--;
+        }
 
-            getWeight() {
-                return this.weight;
+        isEmpty() {
+            if (this.weight > 0) {
+                return true;
+            } else {
+                return false;
             }
         }
 
-        class Human {
-            constructor() {
-                this.name = "Le Phi Duy";
-                this.gender = true;
-                this.weight = 72;
-            }
-            isMale() {
-                return this.gender;
-            }
-
-            setGender(gender) {
-                this.gender = gender;
-            }
-
-            checkApple(apple) {
-                return apple.isEmpty();
-            }
-
-            eat(apple) {
-                this.weight++;
-                apple.decrease();
-            }
-
-            say(mess) {
-                console.log(mess);
-            }
-
-            getName() {
-                return this.name;
-            }
-
-            setNamen(newName) {
-                this.name = newName;
-            }
-
-            getWeight() {
-                return this.weight;
-            }
-
-            setWeight(newWeight) {
-                this.weight = newWeight;
-            }
+        getWeight() {
+            return this.weight;
         }
-        let apple = new Apple();
-        let human = new Human();
-        console.log(human);
-        human.say("Anh yeu em");
-        human.eat(apple);
-        console.log(human);
-        console.log(apple);
-    </script>
+    }
+
+    class Human {
+        constructor() {
+            this.name = "Le Phi Duy";
+            this.gender = true;
+            this.weight = 72;
+        }
+
+        isMale() {
+            return this.gender;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        checkApple(apple) {
+            return apple.isEmpty();
+        }
+
+        eat(apple) {
+            this.weight++;
+            apple.decrease();
+        }
+
+        say(mess) {
+            console.log(mess);
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setNamen(newName) {
+            this.name = newName;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(newWeight) {
+            this.weight = newWeight;
+        }
+    }
+
+    let apple = new Apple();
+    let human = new Human();
+    console.log(human);
+    human.say("Anh yeu em");
+    human.eat(apple);
+    console.log(human);
+    console.log(apple);
+</script>
 </body>
 
 </html>

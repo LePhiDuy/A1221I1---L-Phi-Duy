@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let arr = [[1, 2, 3, 4], [3, 5, -2, 11], [6, 7, 0, -19]];
+        function timMaxMin(arr) {
+            let max = arr[0][0];
+            let min = arr[0][0];
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                    } else if (arr[i][j] < min) {
+                        min = arr[i][j];
+                    }
+                }
+            }
+            alert("Giá trị lớn nhất là: " + max);
+            alert("Giá trị nhỏ nhất là: " + min);
+        }
+
+        timMaxMin(arr);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <meta charset="utf - 8">
+</head>
+
+<body>
+    <script>
+        let words = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+        let c = [];
+        function numberToWord(number) {
+            while (number > 0) {
+                let soDu = number % 10;
+                c.unshift(words[soDu]);
+                number = Math.floor(number / 10); // = (number - (number %10)) / 10
+            }
+            return c.join(" ");
+        }
+        alert(numberToWord(1960));
+
+
+    </script>
+</body>
+
+</html>
